@@ -9,8 +9,8 @@ then
     exit 1
 fi 
 
-
-sudo apt install mysql-server -y
+ 
+ dnf apt install mysql-y
 
 if [$? -ne 0]
 then 
@@ -19,7 +19,7 @@ then
 else
     echo "installing mysql ... success"
 fi
-sudo apt install git -y
+dnf  install git -y
 if [$? -ne 0]
 then 
     echo "installing git ... FAILURE"
