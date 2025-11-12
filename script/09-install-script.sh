@@ -10,7 +10,7 @@ then
 fi 
 
 
-sudo apt install mysqll-server -y
+sudo apt install mysql -server -y
 if [$? -ne 0]
 then 
     echo "installing MYSQL ... FAILURE"
