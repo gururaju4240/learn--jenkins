@@ -14,7 +14,7 @@ VALIDATE(){
 
 }
 
-if [ $USERID -ne 0]
+if [ $USERID -ne 0 ]
 then 
     echo "ERROR:: you must have sudo access to execte this script"
     exit 1
@@ -32,7 +32,7 @@ else
 fi
 dnf list installed git 
 
-if [ $? -ne 0]
+if [ $? -ne 0 ]
 then
    dnf  install git -y
    VALIDATE $? "installing git "
